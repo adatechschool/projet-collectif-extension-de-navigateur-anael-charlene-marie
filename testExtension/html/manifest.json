@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Cat weatheme",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "permissions": ["http://api.openweathermap.org/"],
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "smileys.png"
+      
+    },
+
+    "options_page":"hello.html",
+    "icons":{
+      "48" : "smileys.png",
+    "32": "smileys.png",
+    "16":"smileys.png",
+    "128":"smileys.png"
+    }
+  }

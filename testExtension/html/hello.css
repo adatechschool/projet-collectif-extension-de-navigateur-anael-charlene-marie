@@ -1,0 +1,138 @@
+img{
+    width: 50%;
+    height: 60%;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+body {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: #0b9de6;       
+    display :flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  input , button {
+    margin-bottom: 10px;
+    padding: 15px;
+   
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+  }
+  button {
+    background-color: #14C378;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+   
+  }
+  p {
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  #container {
+    width: 900px;
+    padding: 7.5% 50px;
+    margin: 0px
+  }
+
+ #city{
+  color: aqua;
+ }
+
+ #meteoSearch btn{
+  color:lightpink;
+ }
+
+  /* .btn {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
+    /* margin: 5% 20px; */
+    /* padding: 20px 0px; */
+    /* text-align: center;
+    font-family: montserrat-Regular; */
+    /* text-decoration: none; */
+    /* position: relative;
+    background-color: #e5eae1; */
+
+/* }
+
+#h{
+ border: 3px solid #ff00ef;
+ color: #ff00ef;
+ border-radius: 25px;
+ text-align: right;
+ width: 70px;
+ padding: 5px 10px 8px 6px;
+
+}
+
+#h::before{
+    content: "";
+    width: calc(20px);
+    height: calc(20px);
+    position: absolute;
+    background-color: #ff00ef;
+    left: 8px;
+    top: 4px;
+    border-radius: 20px;
+
+} */ *
+
+/* input [type="checkbox"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position:relative;
+  height: 100px;
+  width: 175%;
+  background-color: aquamarine;
+  border-radius: 25%;
+  transition: background-color .2s;
+  box-shadow: 0 0 15px #00001e;
+} */
+
+/* input [type="checkbox"]::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:30%;
+  transform: translate(-50%, -50%);
+  height:80px;
+  width:80px;
+  border-radius: 50%;
+  background-color: rgb(47,47,68);
+  transition: left .2s;
+} */
+
+  /* input[type="checkbox"]:checked{      */
+      /* sert à gerer qq chose quand le chebox sera géré */
+      /* background-color: aqua;
+  } */
+  
+  /* input[type="checkbox"]:checked::after{
+      left:70%;
+  } */
