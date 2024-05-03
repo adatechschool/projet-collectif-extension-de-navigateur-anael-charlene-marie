@@ -15,10 +15,13 @@ const apiKey ='854c7f80271d986efc886f7373e8d319';
         .then(data => {
             console.log(data);
            
-            document.querySelector('#city').innerHTML = `Hey !! Comment ça va sur ${data.name}?`;
-            document.querySelector('#temp').innerHTML = `la température est de ${data.main.temp} °C`;
+            document.querySelector('#city').innerHTML = `Hey !! How are youuu in ${data.name}?`;
+            document.querySelector('#temp').innerHTML = `The temperature is ${data.main.temp} °C`;
             console.log(data.main.temp)
-            document.querySelector('#humidity').innerHTML = `Le temps est plutôt ${data.weather[0].main} bonne journée à toi`;
+            document.querySelector('#humidity').innerHTML = `The weather is rather ${data.weather[0].main.description} Have a great day !.
+             
+            
+           Now you can choose to activate the theme if u want more fun ! <3 `;
             // document.querySelector('#wind').innerHTML = `${data.wind.speed} km/h`;
             // document.querySelector('#icon').innerHTML = `${data.weather.icon}`
 
