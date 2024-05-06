@@ -29,41 +29,57 @@
     <!-- <div id="container"> -->
     <!-- <a href="#" id="h" class="btn">LINK 08</a> -->
    </div>
-   <button id="meteoSearch">Search</button>
-   <input type="text"  id="searchBox" placeholder="Entrer le nom de la ville"/>
-   
-   <div id="weatherInfo">
-    <h2 id="city"></h2>
-    <p id="temp"></p>
-    <p id="humidity"></p>
-    <p id="wind"></p>
-    <!-- <img id="icon" src="" alt="Weather Icon"> -->
-</div>
-<div id="Timage">
-    <h2>Activate image theme</h2>
-</div>
-<div id="Tmusique">
-    <h2>Activate music theme</h2>
-</div>
-<label class="switch">
-    
-    <input type="checkbox" />
-    <span></span>
-</label>
-<label class="nintendo">
-    
-    <input type="checkbox" />
-    <span></span>
-</label>
-    <div id="theme&song">
+   <!-- <button id="meteoSearch">Search</button>
+   <input type="text"  id="searchBox" placeholder="Entrer le nom de la ville"/> -->
 
-
-
-
+   <div id="page1">
+    <h2>Quel temps fait-il aujourd'hui ?</h2>
+    <div>
+        <input type="text"  id="searchBox" placeholder="Entrer le nom du ville"/>
+        <button id="meteoSearch">Rechercher</button>
+       <!--  <label for="music">Spotify</label><button id="spotifyPlayer"></button> -->
     </div>
-    <div id="image">
-    <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/17048282-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg">
+    
 </div>
+
+
+
+<div id="page2">
+    <!-- <input type="text"  id="back" placeholder="Entrer le nom du ville"/> -->
+    <div id="page2">
+        <!-- Contenu de la page 2 -->
+        <a href="#page1" class="back" onclick="returnToPage1()">back</a>
+        <!-- <div id="page2Content"> -->
+   <div id="weatherInfo">
+        <h2 id="city"></h2>
+            <p id="temp"></p>
+             <p id="humidity"></p>
+   
+    <!-- <img id="icon" src="" alt="Weather Icon"> -->
+                    </div>
+                 <div id="Timage">
+                    <h2>Activé le thème image</h2>
+                        </div>
+                     <div id="Tmusique">
+                             <h2>Activé le thème musique </h2>
+                                </div>
+                                 <label class="switch">
+    
+                             <input type="checkbox" />
+                            <span></span>
+                        </label>
+                    <label class="nintendo">
+    
+                <input type="checkbox" />
+            <span></span>
+        </label>
+<div id="image">
+    <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/17048282-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg">
+        </div>
+    </div>
+   </div>
+
+
     <!-- "https://static.vecteezy.com/ti/vecteur-libre/p3/17047854-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg" -->
     <script src="hello.js"></script>
 </body>

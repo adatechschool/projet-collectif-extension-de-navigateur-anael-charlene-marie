@@ -1,8 +1,9 @@
-#image{
+#page2 #image{
     position: relative;
-    width: 30%;
-    height: 40%;
+    width: 60%;
+    height: 50%;
     bottom:70px;
+  left:55px;
 
 }
 
@@ -45,11 +46,26 @@ body {
     font-size: 15px;
    
   }
-  p {
-    color: #f9f4f4;
-    font-size: 12px;
+  #page2 #city {
+    color:rgb(24, 32, 185);
+    font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
+  }
+
+  #page2 #temp{
+    color:#bb10e2;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+
+  }
+  #page2 #humidity{
+    color:rgb(237, 235, 236);
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 10px;
+  
   }
 
   #container {
@@ -67,7 +83,7 @@ body {
  }
 
  /* Délimitation de la zone du Toggle Switch */
- .switch {
+ #page2 .switch {
   display: inline-block;
   position: relative;
   width: 40px;
@@ -75,11 +91,11 @@ body {
   cursor: pointer;
   overflow: hidden;
   top: 200px;
-  left:110px;
+  left:250px;
 
 }
 /* Masquer  la checkbox */
-.switch input {
+#page2 .switch input {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -90,22 +106,22 @@ body {
   z-index: 1;
 }
 /* Ajout de la couleur de fond du Toggle Switch */
-.switch input +span {
+#page2 .switch input +span {
   position : absolute; 
   top: 0; ;
   bottom:0;
   left:0;
   right: 0;
-  background: #99b4df;
+  background: #d299df;
   border-radius: 30px;
 }
 
-.switch input:checked + span{
+#page2 .switch input:checked + span{
   background: #346abf;
 
 }
 /* Insertion du curseur */
-.switch input + span:before{
+#page2 .switch input + span:before{
   content:"";
   display: inline-block;
   position: absolute;
@@ -119,11 +135,11 @@ transform: translateY(-50%);
 transition: all .5s;
 }
 
-.switch input:checked + span:before {
+#page2 .switch input:checked + span:before {
 left: 20px;
 }
 
-.nintendo {
+#page2 .nintendo {
   display: inline-block;
   position: relative;
   width: 40px;
@@ -131,11 +147,11 @@ left: 20px;
   cursor: pointer;
   overflow: hidden;
   top :220px;
-  left:110px;
+  left:250px;
 
 }
 
-.nintendo input {
+#page2 .nintendo input {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -146,22 +162,22 @@ left: 20px;
   z-index: 1;
 }
 
-.nintendo input +span {
+#page2 .nintendo input +span {
   position : absolute; 
   top: 0; ;
   bottom:0;
   left:0;
   right: 0;
-  background: #99b4df;
+  background: #d299df;
   border-radius: 30px;
 }
 
-.nintendo input:checked + span{
+#page2 .nintendo input:checked + span{
   background: #346abf;
 
 }
 
-.nintendo input + span:before{
+#page2 .nintendo input + span:before{
   content:"";
   display: inline-block;
   position: absolute;
@@ -175,20 +191,82 @@ transform: translateY(-50%);
 transition: all .5s;
 }
 
-.nintendo input:checked + span:before {
+#page2 .nintendo input:checked + span:before {
 left: 20px;
 }
 
-#Timage{
+#page2 #Timage{
   position: relative;
   top:240px;
   right:25px;
 
 }
 
-#Tmusique{
+#page2 #Tmusique{
   position: relative;
   top:260px;
  right:25px;
 
 }
+
+#page2 #back{
+  position: relative;
+  background-color: #919191fa;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    bottom: 200px;
+    right:200px;
+    margin: auto
+
+
+}
+
+/* code charlene css */
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400&display=swap'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+body {
+  width: 500px;
+  height: 550px;
+  text-align: center;
+  background-image: linear-gradient(to right top, #c7d9ed, #b9d0ec, #acc7eb, #a0beea, #94b5e9, #88b8ef, #7abcf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);     
+  display :flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+
+
+}
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  input , button {
+    margin-bottom: 10px;
+    padding: 5px;
+   
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+  }
+  button {
+    background-color: #14C378;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+   
+  }
+  p {
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
