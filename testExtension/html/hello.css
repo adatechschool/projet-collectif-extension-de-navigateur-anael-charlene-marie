@@ -3,7 +3,7 @@
     width: 60%;
     height: 50%;
     bottom:70px;
-  left:55px;
+  left:45px;
 
 }
 
@@ -14,8 +14,8 @@
     font-weight: bold;
 }
 body {
-    width: 500px;
-    height:550px;
+    width: 600px;
+    height:650px;
     text-align: center;
     background-color: #0b9de6;       
     display :flex ;
@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     width: 300px;
   }
-  input , button {
+  #page1 input , button {
     margin-bottom: 10px;
     padding: 15px;
    
@@ -39,7 +39,7 @@ body {
     outline: none;
     border-radius: 6px;
   }
-  button {
+  #page1 button {
     background-color: #14C378;
     color: #fff;
     cursor: pointer;
@@ -90,8 +90,8 @@ body {
   height: 20px;
   cursor: pointer;
   overflow: hidden;
-  top: 200px;
-  left:250px;
+  bottom: 26px;
+  left:340px;
 
 }
 /* Masquer  la checkbox */
@@ -112,12 +112,12 @@ body {
   bottom:0;
   left:0;
   right: 0;
-  background: #d299df;
+  background: #346abf;
   border-radius: 30px;
 }
 
 #page2 .switch input:checked + span{
-  background: #346abf;
+  background: #d299df;
 
 }
 /* Insertion du curseur */
@@ -146,8 +146,8 @@ left: 20px;
   height: 20px;
   cursor: pointer;
   overflow: hidden;
-  top :220px;
-  left:250px;
+  bottom:20px;
+  left:348px;
 
 }
 
@@ -168,12 +168,12 @@ left: 20px;
   bottom:0;
   left:0;
   right: 0;
-  background: #d299df;
+  background: #346abf;
   border-radius: 30px;
 }
 
 #page2 .nintendo input:checked + span{
-  background: #346abf;
+  background: #d299df;
 
 }
 
@@ -197,16 +197,17 @@ left: 20px;
 
 #page2 #Timage{
   position: relative;
-  top:240px;
-  right:25px;
+  top:10px;
+  left:140px;
+  font-size: 10px;
 
 }
 
 #page2 #Tmusique{
   position: relative;
-  top:260px;
- right:25px;
-
+  top:20px;
+ left:140px;
+ font-size: 10px;
 }
 
 #page2 #back{

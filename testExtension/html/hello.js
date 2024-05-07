@@ -23,16 +23,7 @@ const apiKey ='854c7f80271d986efc886f7373e8d319';
             
             
             Maintenant tu peux choisir les thèmes pour plus de fun ! <3 `;
-            // document.querySelector('#wind').innerHTML = `${data.wind.speed} km/h`;
-            // document.querySelector('#icon').innerHTML = `${data.weather.icon}`
-
-            //fction pour recup la donnée météorologique
-            // const getDescription =(weatherArray) => {
-            //     let description="";
-            //     weatherArray.forEach(weatherObject => {
-                    //weatherObject est utilisé comme une variable de paramètre dans la fonction
-                    // weatherArray += weatherObject.main + ", ";
-
+           
                      })
         .catch(err => console.log('Erreur : ' + err));
     }
@@ -88,4 +79,29 @@ function returnToPreviousPage() {
     // Met à jour l'ID de la page/div actuelle
     currentPageId = previousPageId;
 }
+
+// const accessKey = 'VgPpvThQ0uoO728TgP9u3yj0fIkfnh46k4rf-RFttZw';
+// const getPhoto = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
+
+
+// fetch(getPhoto)
+//   .then(response => response.json())
+//   .then(photo => {
+//     console.log(photo);
+//     displayPhotoDetails(photo);
+//     // Envoyer l'URL de l'image au script de fond
+//     chrome.runtime.sendMessage({action: "setWallpaper", imageUrl: photo.urls.regular});
+//   })
+//   .catch(err => console.log('Erreur : ' + err));
+
+// function displayPhotoDetails(photo) {
+//   const photoDetailsDiv = document.createElement("div");
+//   photoDetailsDiv.classList.add('content');
+//   photoDetailsDiv.innerHTML = `
+//     <img class="image" src="${photo.urls.regular}" alt="${photo.alt_description}" />
+//   `;
+//   document.getElementById("photo").appendChild(photoDetailsDiv);
+// }
+
+
 
