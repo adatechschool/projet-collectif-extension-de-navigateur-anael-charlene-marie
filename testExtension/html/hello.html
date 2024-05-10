@@ -1,89 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="hello.css">
-    <style>
-        /* body{
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-        } */
-    
-    </style>
 </head>
+
 <body>
- <!-- <input type="checkbox" /> -->
-    <!-- <h1>Hello Cats</h1>
-    <h2>Salut Aujourd'hui il fait 14 degrès et le ciel est assez nuageux, j'espère que tu passeras une bonne journée</h2> -->
-  <style>
-   
 
-   
-
-  </style>
-    <!-- <div id="container"> -->
-    <!-- <a href="#" id="h" class="btn">LINK 08</a> -->
-   </div>
-   <!-- <button id="meteoSearch">Search</button>
+    <!-- <button id="meteoSearch">Search</button>
    <input type="text"  id="searchBox" placeholder="Entrer le nom de la ville"/> -->
 
-   <div id="page1">
-    <h2>Quel temps fait-il aujourd'hui ?</h2>
-    <div>
-        <input type="text"  id="searchBox" placeholder="Entrer le nom du ville"/>
-        <button id="meteoSearch">Rechercher</button>
-       <!--  <label for="music">Spotify</label><button id="spotifyPlayer"></button> -->
+    <div id="page1">
+        <div class="today">
+        <h2>Quel temps fait-il aujourd'hui ?</h2>
     </div>
-    
-</div>
-
-
-
-<div id="page2">
-    <!-- <input type="text"  id="back" placeholder="Entrer le nom du ville"/> -->
-    <div id="page2">
-        <!-- Contenu de la page 2 -->
-        <a href="#page1" class="back" onclick="returnToPreviousPage()">back</a>
-        <!-- <div id="page2Content"> -->
-   <div id="weatherInfo">
-        <h2 id="city"></h2>
-            <p id="temp"></p>
-             <p id="humidity"></p>
-   
-    <!-- <img id="icon" src="" alt="Weather Icon"> -->
-                    </div>
-                 <div id="Timage">
-                    <h2>Thème image</h2>
-                        </div>
-                     <div id="Tmusique">
-                             <h2>Thème musique </h2>
-                                </div>
-                                 <label class="switch">
-                                    <div class="photos">
-                                </div>
-                             <input type="checkbox" />
-                            <span></span>
-                        </label>
-                    <label class="nintendo">
-    
-                <input type="checkbox" />
-            <span></span>
-        </label>
-<div id="image">
-    <img src="https://static.vecteezy.com/ti/vecteur-libre/p1/17048282-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg">
+        <div>
+            <input type="text" id="searchBox" placeholder="Entrer le nom de la ville" />
+            <button id="meteoSearch">Rechercher</button>
+            <!--  <label for="music">Spotify</label><button id="spotifyPlayer"></button> -->
         </div>
-        <div id="photo"></div>
+
     </div>
-   </div>
 
 
-    <!-- "https://static.vecteezy.com/ti/vecteur-libre/p3/17047854-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg" -->
+
+    <div id="page2">
+        <!-- <input type="text"  id="back" placeholder="Entrer le nom du ville"/> -->
+        
+            <!-- Contenu de la page 2 -->
+            <a href="#page1" class="back" onclick="returnToPreviousPage()">back</a>
+            <!-- <div id="page2Content"> -->
+            <div id="weatherInfo">
+                <h2 id="city"></h2>
+                <p id="temp"></p>
+                <p id="humidity"></p>
+
+                <!-- <img id="icon" src="" alt="Weather Icon"> -->
+            </div>
+            <div id="Timage">
+                <h2>Thème image</h2>
+            </div>
+            <div id="Tmusique">
+                <h2>Thème musique </h2>
+            </div>
+            <label class="switch">
+                <div class="photos">
+                </div>
+                <input type="checkbox" />
+                <span></span>
+            </label>
+            <label class="nintendo">
+                <input type="checkbox" id="spotifyCheckbox" />
+                  <span></span>
+            </label>
+            <div id="image">
+                <img
+                    src="https://static.vecteezy.com/ti/vecteur-libre/p1/17048282-illustration-de-chat-mignon-chat-kawaii-chibi-style-de-dessin-dessin-anime-de-chat-vectoriel.jpg">
+            </div>
+            <div id="photo"></div>
+        </div>
+            
+    <div class="spotify-container" id="spotifyIframeContainer" style="display:none;">
+        <iframe style="border-radius:15px" src="https://open.spotify.com/embed/album/5j0o3XQ1YciVzm7MtcFmfG?utm_source=generator" width="130%" height="120" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
     <script src="hello.js"></script>
-    <!-- <script src="key.js"></script> -->
+    
 </body>
+
 </html>

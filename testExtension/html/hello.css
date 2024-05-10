@@ -1,273 +1,230 @@
-#page2 #image{
-    position: relative;
-    width: 60%;
-    height: 50%;
-    bottom:70px;
-  left:45px;
-
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-body {
-    width: 600px;
-    height:650px;
-    text-align: center;
-    background-color: #0b9de6;       
-    display :flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-
-  }
-  
-  div {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-  }
-  #page1 input , button {
-    margin-bottom: 10px;
-    padding: 15px;
-   
-    border: 0;
-    outline: none;
-    border-radius: 6px;
-  }
-  #page1 button {
-    background-color: #14C378;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-   
-  }
-  #page2 #city {
-    color:rgb(24, 32, 185);
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-
-  #page2 #temp{
-    color:#bb10e2;
-    font-size: 15px;
-    font-style: italic;
-    margin-bottom: 10px;
-
-  }
-  #page2 #humidity{
-    color:rgb(237, 235, 236);
-    font-size: 15px;
-    font-style: italic;
-    margin-bottom: 10px;
-  
-  }
-
-  #container {
-    width: 900px;
-    padding: 7.5% 50px;
-    margin: 0px
-  }
-
- #city{
-  color: aqua;
- }
-
- #meteoSearch btn{
-  color:lightpink;
- }
-
- /* Délimitation de la zone du Toggle Switch */
- #page2 .switch {
-  display: inline-block;
-  position: relative;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-  overflow: hidden;
-  bottom: 26px;
-  left:340px;
-
-}
-/* Masquer  la checkbox */
-#page2 .switch input {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-}
-/* Ajout de la couleur de fond du Toggle Switch */
-#page2 .switch input +span {
-  position : absolute; 
-  top: 0; ;
-  bottom:0;
-  left:0;
-  right: 0;
-  background: #346abf;
-  border-radius: 30px;
-}
-
-#page2 .switch input:checked + span{
-  background: #d299df;
-
-}
-/* Insertion du curseur */
-#page2 .switch input + span:before{
-  content:"";
-  display: inline-block;
-  position: absolute;
-top: 50%;
-left: 4px;
-width: 15px;
-height: 15px;
-background: white;
-border-radius: 50%;
-transform: translateY(-50%);
-transition: all .5s;
-}
-
-#page2 .switch input:checked + span:before {
-left: 20px;
-}
-
-#page2 .nintendo {
-  display: inline-block;
-  position: relative;
-  width: 40px;
-  height: 20px;
-  cursor: pointer;
-  overflow: hidden;
-  bottom:20px;
-  left:348px;
-
-}
-
-#page2 .nintendo input {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
-}
-
-#page2 .nintendo input +span {
-  position : absolute; 
-  top: 0; ;
-  bottom:0;
-  left:0;
-  right: 0;
-  background: #346abf;
-  border-radius: 30px;
-}
-
-#page2 .nintendo input:checked + span{
-  background: #d299df;
-
-}
-
-#page2 .nintendo input + span:before{
-  content:"";
-  display: inline-block;
-  position: absolute;
-top: 50%;
-left: 4px;
-width: 15px;
-height: 15px;
-background: white;
-border-radius: 50%;
-transform: translateY(-50%);
-transition: all .5s;
-}
-
-#page2 .nintendo input:checked + span:before {
-left: 20px;
-}
-
-#page2 #Timage{
-  position: relative;
-  top:10px;
-  left:140px;
-  font-size: 10px;
-
-}
-
-#page2 #Tmusique{
-  position: relative;
-  top:20px;
- left:140px;
- font-size: 10px;
-}
-
-#page2 #back{
-  position: relative;
-  background-color: #919191fa;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    bottom: 200px;
-    right:200px;
-    margin: auto
-
-
-}
-
-/* code charlene css */
-/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400&display=swap'); */
-
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+
 }
+
 body {
-  width: 500px;
+  width: 600px;
   height: 550px;
   text-align: center;
-  background-image: linear-gradient(to right top, #c7d9ed, #b9d0ec, #acc7eb, #a0beea, #94b5e9, #88b8ef, #7abcf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);     
-  display :flex ;
+  background-image: linear-gradient(to right top, #c7d9ed, #b9d0ec, #acc7eb, #a0beea, #94b5e9, #88b8ef, #7abcf4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  /* // display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 70%;
+  background-repeat: no-repeat;
+  background-repeat: cover;
+
+}
+
+.today{
+  position: relative;
+  top:120px;
+  left:145px;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input, button {
+  position: relative;
+  top:150px;
+  left:150px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 0;
+  outline: none;
   border-radius: 6px;
+}
+
+button {
+  background-color: #14C378;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#page2 #city {
+  color: rgb(24, 32, 185);
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 50px;
+  left: 130px;
+}
+
+#page2 #temp {
+  position: fixed;
+  top: 85px;
+  left: 205px;
+  color: #bb10e2;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#page2 #humidity {
+  position: fixed;
+  top: 110px;
+  left: 10px;
+  color: rgb(237, 235, 236);
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#page2 #image {
+  position: relative;
+  width: 60%;
+  height: 20%;
+ top: 80px;
+  left: 210px;
+}
+.switch{
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  top: 290px;
+  left: 240px;
+
+}
+.nintendo {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  top: 315px;
+  left: 200px;
+}
+.switch input{
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
 
 
 }
-  div {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+ .nintendo input {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.switch input + span{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d299df;
+  border-radius: 30px;
+
+}
+ .nintendo input + span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #d299df;
+  border-radius: 30px;
+}
+
+ .nintendo input:checked + span {
+  background: #346abf;
+}
+.switch input:checked + span{
+  background: #346abf;
+}
+ .nintendo input + span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all .5s;
+}
+.switch input + span:before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all .5s;
+
+}
+
+.switch input:checked + span:before, .nintendo input:checked + span:before {
+  left: 20px;
+}
+#page2 #Timage{
+  position: relative;
+  display: flex;
+  top: 330px;
+ left: 120px;
+
+}
+
+ #page2 #Tmusique {
+  position: relative;
+  display: flex;
+  top: 335px;
+ left: 120px;
+}
+
+#page2 .back {
+  position: relative;
+  background-color: #919191fa;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  top: 0px;
+  right:130px;
+  margin: auto;
+  border-radius: 6px;
+  padding:10px;
+}
+
+iframe{
+  height: 120%;
+  padding-left: 0;
+  position: relative;
+  top:135px;
+  left:100px;
   }
-  input , button {
-    margin-bottom: 10px;
-    padding: 5px;
-   
-    border: 0;
-    outline: none;
-    border-radius: 6px;
-  }
-  button {
-    background-color: #14C378;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-   
-  }
-  p {
-    color: #999;
-    font-size: 12px;
-    font-style: italic;
-    margin-bottom: 10px;
-  }
+
+/* code charlene css */
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;300;400&display=swap'); */
+

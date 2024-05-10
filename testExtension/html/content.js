@@ -5,3 +5,4 @@
 //     chrome.runtime.sendMessage({action: "setWallpaper", imageUrl: photo.urls.regular});
 //   })
 //   .catch(err => console.log('Erreur : ' + err));
+
