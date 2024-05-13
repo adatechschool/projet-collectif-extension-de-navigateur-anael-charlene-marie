@@ -1,65 +1,14 @@
 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.action === "photos") {
+        // Change the wallpaper in your Google Chrome
+        // For demonstration purposes, let's just log the URL
+        console.log("Setting wallpaper:", request.imageUrl);
+        // You need to implement the logic to set the wallpaper
 
-// //   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-// //     if (request.action === "setWallpaper") {
-// //       // Définir l'image en fond d'écran
-// //       chrome.wallpaper.setWallpaper({
-// //         url: request.imageUrl,
-// //         layout: 'STRETCH'
-// //       }, function() {
-// //         console.log("Fond d'écran défini avec succès !");
-// //         // Envoyer une réponse si nécessaire
-// //         sendResponse({message: "Fond d'écran défini avec succès"});
-// //       });
-// //     }
-// //   });
-
-
-
-// // Écouter les messages envoyés par le contenu de l'extension
-// chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-//     if (request.action === "setWallpaper") {
-//       // Définir l'image en fond d'écran
-//       chrome.wallpaper.setWallpaper({
-//         url: request.imageUrl,
-//         layout: 'STRETCH'
-//       }, function() {
-//         console.log("Fond d'écran défini avec succès !");
-//         // Envoyer une réponse si nécessaire
-//         sendResponse({message: "Fond d'écran défini avec succès"});
-//       });
-//     }
-//   });
-
-// // background.js
-
-//   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-//     if (request.action === "setWallpaper") {
-//       // Définir l'image en fond d'écran
-//       chrome.wallpaper.setWallpaper({
-//         url: request.imageUrl,
-//         layout: 'STRETCH'
-//       }, function() {
-//         console.log("Fond d'écran défini avec succès !");
-//         // Envoyer une réponse si nécessaire
-//         sendResponse({message: "Fond d'écran défini avec succès"});
-//       });
-//     }
-//   });
-
-
-// // Écouter les messages envoyés par le contenu de l'extension
-// chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-//     if (request.action === "setWallpaper") {
-//       // Définir l'image en fond d'écran
-//       chrome.wallpaper.setWallpaper({
-//         url: request.imageUrl,
-//         layout: 'STRETCH'
-//       }, function() {
-//         console.log("Fond d'écran défini avec succès !");
-//         // Envoyer une réponse si nécessaire
-//         sendResponse({message: "Fond d'écran défini avec succès"});
-//       });
-//     }
-//   });
-
+        // Exemple d'implémentation :
+        chrome.storage.local.set({ wallpaperUrl: request.imageUrl }, function() {
+            console.log('Wallpaper URL saved:', request.imageUrl);
+        });
+    }
+});

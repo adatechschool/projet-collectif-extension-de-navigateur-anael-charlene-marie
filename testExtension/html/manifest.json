@@ -3,25 +3,19 @@
   "name": "Cat weatheme",
   "description": "Base Level Extension",
   "version": "1.0",
- "action": {
+  "action": {
     "default_popup": "hello.html",
     "default_icon": "smileys.png"
-    
   },
-
-  "options_page":"hello.html",
-  "icons":{
-    "48" : "smileys.png",
-  "32": "smileys.png",
-  "16":"smileys.png",
-  "128":"smileys.png"
+  "options_page": "hello.html",
+  "icons": {
+    "48": "smileys.png",
+    "32": "smileys.png",
+    "16": "smileys.png",
+    "128": "smileys.png"
   },
-  "permissions": ["tabs"]
-,
-"background_scripts": [
-  {
-    "matches": ["<all_urls>"],
-    "js": ["background.js"]
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
   }
-]
 }

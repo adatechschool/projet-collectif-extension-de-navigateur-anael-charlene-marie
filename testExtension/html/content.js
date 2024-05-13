@@ -6,3 +6,10 @@
 //   })
 //   .catch(err => console.log('Erreur : ' + err));
 
+// alert ('content script alive!');
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+     alert ('change theme:' + request.font-size);
+     $('#id_editor').attr('style', 'font-size:' + request.font-size+ 'px;')
+    }
+  );
